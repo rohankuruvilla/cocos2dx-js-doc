@@ -120,6 +120,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dl class="section return"><dt>Returns:</dt><dd>CCString*</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getTiles</b></p>  <dl class="section return"><dt>Returns:</dt><dd>unsigned int*</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">releaseMap</b></p>  <dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">tileGIDAt</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCPoint;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::ccTMXTileFlags*;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">tileGIDAt</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCPoint;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setTiles</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">unsigned</td><td>int*; </td></tr>
@@ -167,6 +182,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setupTiles</b></p>  <dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setTileGID</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>int; </td></tr>
+    <tr><td class="paramname">cocos2d::CCPoint;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::ccTMXTileFlags;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setTileGID</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>int; </td></tr>
+    <tr><td class="paramname">cocos2d::CCPoint;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getMapTileSize</b></p>  <dl class="section return"><dt>Returns:</dt><dd>CCSize</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setLayerSize</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
@@ -200,6 +232,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getTileSet</b></p>  <dl class="section return"><dt>Returns:</dt><dd>CCTMXTilesetInfo*</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getProperties</b></p>  <dl class="section return"><dt>Returns:</dt><dd>CCDictionary*</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Static Function: <b style="font-size: 1.2em;">layerWithTilesetInfo</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCTMXTilesetInfo*;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCTMXLayerInfo*;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCTMXMapInfo*;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>CCTMXLayer*</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Static Function: <b style="font-size: 1.2em;">create</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCTMXTilesetInfo*;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCTMXLayerInfo*;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCTMXMapInfo*;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>CCTMXLayer*</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">CCTMXLayer</b></p>  <dl class="section return"><dt>Returns:</dt><dd>void </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="cocos2dx_8cpp.html">cocos2dx.cpp</a></li>
@@ -207,7 +257,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 10 2012 17:46:17 for Cocos2d-x JS Bindings by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2012 18:06:10 for Cocos2d-x JS Bindings by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

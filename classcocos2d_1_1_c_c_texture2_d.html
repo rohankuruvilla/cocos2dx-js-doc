@@ -91,6 +91,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"> <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getShaderProgram</b></p>  <dl class="section return"><dt>Returns:</dt><dd>CCGLProgram*</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getMaxT</b></p>  <dl class="section return"><dt>Returns:</dt><dd>float</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">stringForFormat</b></p>  <dl class="section return"><dt>Returns:</dt><dd>const char*</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">initWithImage</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCImage*;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::ccResolutionType;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">initWithImage</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCImage*;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setShaderProgram</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">cocos2d::CCGLProgram*;</td><td></td></tr>
@@ -101,6 +116,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getMaxS</b></p>  <dl class="section return"><dt>Returns:</dt><dd>float</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">hasPremultipliedAlpha</b></p>  <dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getPixelsHigh</b></p>  <dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">bitsPerPixelForFormat</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCTexture2DPixelFormat;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">bitsPerPixelForFormat</b></p>  <dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setResolutionType</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">cocos2d::ccResolutionType;</td><td></td></tr>
@@ -109,6 +132,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getName</b></p>  <dl class="section return"><dt>Returns:</dt><dd>unsigned int</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">initWithString</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>char*; </td></tr>
+    <tr><td class="paramname">const</td><td>char*; </td></tr>
+    <tr><td class="paramname">double;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">initWithString</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>char*; </td></tr>
+    <tr><td class="paramname">cocos2d::CCSize;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCTextAlignment;</td><td></td></tr>
+    <tr><td class="paramname">cocos2d::CCVerticalTextAlignment;</td><td></td></tr>
+    <tr><td class="paramname">const</td><td>char*; </td></tr>
+    <tr><td class="paramname">double;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>bool</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">setMaxT</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">double;</td><td></td></tr>
@@ -153,6 +197,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">getResolutionType</b></p>  <dl class="section return"><dt>Returns:</dt><dd>cocos2d::ccResolutionType</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Static Function: <b style="font-size: 1.2em;">setDefaultAlphaPixelFormat</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cocos2d::CCTexture2DPixelFormat;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Static Function: <b style="font-size: 1.2em;">defaultAlphaPixelFormat</b></p>  <dl class="section return"><dt>Returns:</dt><dd>cocos2d::CCTexture2DPixelFormat</dd></dl>
+ <p style="color: red; font-variant: small-caps;">Static Function: <b style="font-size: 1.2em;">PVRImagesHavePremultipliedAlpha</b></p>  <dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">JSBool;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>void</dd></dl>
  <p style="color: red; font-variant: small-caps;">Function: <b style="font-size: 1.2em;">CCTexture2D</b></p>  <dl class="section return"><dt>Returns:</dt><dd>void </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="cocos2dx_8cpp.html">cocos2dx.cpp</a></li>
@@ -160,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 10 2012 17:46:16 for Cocos2d-x JS Bindings by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2012 18:06:10 for Cocos2d-x JS Bindings by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
